@@ -1,0 +1,31 @@
+### products index
+GET http://localhost:3000/products
+###
+# prodcut show
+GET http://localhost:3000/products/1
+
+### product create
+POST http://localhost:3000/products
+# Authorization:
+content-type: application/json
+
+{
+  "name": "",
+  "description": "",
+  "price": "",
+  "image_url": ""
+}
+
+### product update
+PATCH http://localhost:3000/products/1
+content-type: application/json
+
+{
+  "name": "",
+  "description": "",
+  "price": "",
+  "image_url": ""
+}
+
+### product destroy
+DELETE http://localhost:3000/products/9
